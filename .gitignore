@@ -1,0 +1,11 @@
+*.o
+*.ko
+*.pch
+*.gch
+*.a
+*.la
+*.lo
+*.so
+*.so.*
+*.out
+build/
