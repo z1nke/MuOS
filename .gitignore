@@ -9,3 +9,5 @@
 *.so.*
 *.out
 build/
+*.img
+none
