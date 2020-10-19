@@ -32,7 +32,7 @@ start:
 
     ; ------- display on screen -------
     mov ax, 1301H  ; write string, cursor moved
-    mov bx, 000BH  ; video page number = 0, 
+    mov bx, 000BH  ; video page number = 0, color is light cyan(0x0B)
     mov dx, 0310H  ; row and column coordinate
     mov cx, 15     ; length of string
     push ax

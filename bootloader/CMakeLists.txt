@@ -1,11 +1,11 @@
 enable_language(ASM_NASM)
 
 add_custom_target(
-    BootImg
+    BootBin
     ALL
-    COMMAND echo "building boot.img"
-    COMMAND nasm -o ${PROJECT_BINARY_DIR}/bootloader/boot.img 
+    COMMAND echo "building boot.bin"
+    COMMAND nasm -o ${PROJECT_BINARY_DIR}/bootloader/boot.bin 
             ${PROJECT_SOURCE_DIR}/bootloader/boot.asm
-    COMMENT "building boot.img"
+    COMMENT "building boot.bin"
     SOURCES ${PROJECT_SOURCE_DIR}/bootloader/boot.asm
 ) 
