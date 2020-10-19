@@ -1,3 +1,24 @@
+# Debug command
+```sh
+b address     # breakpoint
+c             # continue
+s             # step  single
+info cpu      # show registers info
+r             # show registers info
+sreg          # show section registers info
+creg          # show control registers info
+xp /nuf addr  # show content of the physical memory address
+x  /nuf addr  # show content of the virtual  memory address
+u start end   # disassembly start from `start` and end to `end`
+
+# n is number
+# u is size(b: byte, h: word, w: dword, g: qword)
+# f is format(x: hex, d: decimal, t: binary, c: char)
+
+# example
+xp /10bx 0x100000
+```
+
 # Problems when using bochs
 
 ```
